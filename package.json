@@ -4,7 +4,7 @@
   "description": "",
   "main": " server/index.js",
   "scripts": {
-    "start":"node server/index.js",
+    "start": "node server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/xiawang1024/doubanimooc#readme",
   "dependencies": {
-    "koa": "^2.5.0"
+    "ejs": "^2.5.7",
+    "koa": "^2.5.0",
+    "koa-views": "^6.1.4"
   }
 }

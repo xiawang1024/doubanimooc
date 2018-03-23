@@ -4,10 +4,28 @@ block title
     title Koa Douban 首页
 
 block content
-    .container
-        .row
-            .col-md-8
-                h1 Hi #{you}
-                p This is #{me}
-            .col-md-4
-                h3 测试pug 模板引擎中间件
+    include ./includes/header
+    
+    .container-fluid
+        .siderbar
+        .content
+            .row 
+                each item in [1,2,3,4,5,6]
+                    .col-12.col-sm-4.col-md-3.col-lg-2
+                        .card
+                            img.card-img-top(src="http://img7.doubanio.com/view/photo/s_ratio_poster/public/p1910908765.webp",data-video="https://sv1.doubanio.com/201803231730/7e17ff2e3a307889f9b4da849ec9648b/2017/mp4ie_annual_4.mp4")
+                            .card-body
+                                h4.card-title 这是电影标题
+                                p.card-desc 这是电影描述
+                            .card-footer
+                                small.text-muted 1 天前更新                
+            .row 
+                each item in [1,2,3,4,5,6]
+                    .col-12.col-sm-4.col-md-3.col-lg-2
+                        .card
+                            img.card-img-top(src="http://img7.doubanio.com/view/photo/s_ratio_poster/public/p1910908765.webp",data-video="https://sv1.doubanio.com/201803231730/7e17ff2e3a307889f9b4da849ec9648b/2017/mp4ie_annual_4.mp4")
+                            .card-body
+                                h4.card-title 这是电影标题
+                                p.card-desc 这是电影描述
+                            .card-footer
+                                small.text-muted 1 天前更新  

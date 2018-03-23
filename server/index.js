@@ -5,14 +5,15 @@ const path = require('path')
 
 
 // 加载模板引擎
-app.use(views(path.join(__dirname, './tpl'),{
-    extension: 'ejs'
+app.use(views(path.join(__dirname, './views'),{
+    extension: 'pug'
 }))
 
 app.use(async (ctx,next) => {
-    let title = 'Wangxia'
-    await ctx.render('test',{
-        title
+    let you = 'Gyy'
+    let me = 'Wangxia'
+    await ctx.render('index',{
+        you,me
     })
 })
 

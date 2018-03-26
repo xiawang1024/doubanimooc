@@ -17,9 +17,10 @@
     "url": "https://github.com/xiawang1024/doubanimooc/issues"
   },
   "homepage": "https://github.com/xiawang1024/doubanimooc#readme",
-  "dependencies": {    
+  "dependencies": {
     "koa": "^2.5.0",
     "koa-views": "^6.1.4",
-    "pug": "^2.0.3"
+    "pug": "^2.0.3",
+    "puppeteer": "^1.2.0"
   }
 }

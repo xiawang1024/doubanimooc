@@ -39,13 +39,13 @@ exports.connect = () => {
             }        
         })
         mongoose.connection.once('open',async () => {
-            const Cat = mongoose.model('Cat',{name:String})
-            const kitty = new Cat({
-                name:'DOG'
-            })
-            await kitty.save().then((docs) => {
-                console.log(docs)
-            })
+            // const Cat = mongoose.model('Cat',{name:String})
+            // const kitty = new Cat({
+            //     name:'DOG'
+            // })
+            // await kitty.save().then((docs) => {
+            //     console.log(docs)
+            // })
             resolve()
             console.log('MongoDB connected successful')
         })

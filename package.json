@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/xiawang1024/doubanimooc#readme",
   "dependencies": {
+    "bcrypt-nodejs": "^0.0.3",
     "glob": "^7.1.2",
     "koa": "^2.5.0",
     "koa-views": "^6.1.4",

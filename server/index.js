@@ -9,11 +9,13 @@ const { connect, initSchemas } = require('./database/init')
 // 数据库连接
 ;(async () =>{
     await connect()   
-    // initSchemas()
+    initSchemas()
     
-    // const Movie = mongoose.model('Movie')
+    const Movie = mongoose.model('Movie')
 
-    // const moveis = await Movie.find({})
+    const movies = await Movie.find({})
+
+    console.log(movies)
 })()
 
 

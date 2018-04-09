@@ -11,11 +11,8 @@ const { connect, initSchemas } = require('./database/init')
     await connect()   
     initSchemas()
     
-    const Movie = mongoose.model('Movie')
-
-    const movies = await Movie.find({})
-
-    console.log(movies)
+    // require(path.join(__dirname , './tasks/movie'))
+    require(path.join(__dirname , './tasks/api'))
 })()
 
 

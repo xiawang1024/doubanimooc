@@ -8,10 +8,12 @@ const movieSchema = new Schema({
         unique:true
     },
 
-    category:{
-        type:ObjectId,
-        ref:'Category'
-    },
+    category:[
+        {
+            type:ObjectId,
+            ref:'Category'
+        }
+    ],
 
     rate:Number,
     title:String,
